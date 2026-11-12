@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#eef4ff">
+    <title>Kuis Matematika - Kelas 3 SD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <div class="brand-icon">🧮</div>
+            <div>
+                <h1>Kuis Matematika</h1>
+                <p>Petualangan Matematika Kelas 3 SD</p>
+            </div>
+        </header>
+
+        <section id="startScreen" class="panel start-screen">
+            <div class="hero-icon">🎓</div>
+            <span class="tag">BELAJAR SAMBIL BERMAIN</span>
+            <h2>Halo, Juara Matematika!</h2>
+            <p>
+                Siap menguji kemampuan matematikamu?
+                Jawab 40 soal dan raih nilai terbaik!
+            </p>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <span>📝</span>
+                    <strong>40</strong>
+                    <small>Soal</small>
+                </div>
+                <div class="info-card">
+                    <span>🎯</span>
+                    <strong>100</strong>
+                    <small>Nilai Maksimal</small>
+                </div>
+                <div class="info-card">
+                    <span>⭐</span>
+                    <strong>SD 3</strong>
+                    <small>Tingkat Kelas</small>
+                </div>
+            </div>
+
+            <button id="startBtn" class="primary-btn">
+                Mulai Kuis 🚀
+            </button>
+        </section>
+
+        <section id="quizScreen" class="panel hidden">
+
+            <div class="quiz-top">
+                <span id="questionNumber">Soal 1 dari 40</span>
+                <span class="timer-label">🧠 Tetap semangat!</span>
+            </div>
+
+            <div class="progress-track">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+
+            <div class="question-card">
+                <span class="question-label">PERTANYAAN</span>
+                <h2 id="questionText"></h2>
+            </div>
+
+            <div id="optionsContainer" class="options"></div>
+
+            <div class="quiz-bottom">
+                <span id="answeredCount">0 / 40 dijawab</span>
+                <button id="nextBtn" class="primary-btn" disabled>
+                    Selanjutnya →
+                </button>
+            </div>
+
+        </section>
+
+        <section id="resultScreen" class="panel hidden">
+            <div class="result-icon" id="resultIcon">🏆</div>
+            <span class="tag">HASIL KUIS</span>
+            <h2 id="resultTitle">Kuis Selesai!</h2>
+            <p id="resultMessage"></p>
+
+            <div class="score-circle">
+                <span id="finalScore">100</span>
+                <small>Nilai</small>
+            </div>
+
+            <div class="result-grid">
+                <div class="result-card correct-card">
+                    <strong id="correctCount">0</strong>
+                    <small>Jawaban Benar</small>
+                </div>
+                <div class="result-card wrong-card">
+                    <strong id="wrongCount">0</strong>
+                    <small>Jawaban Salah</small>
+                </div>
+            </div>
+
+            <button id="reviewBtn" class="secondary-btn">
+                Lihat Pembahasan 📖
+            </button>
+
+            <button id="restartBtn" class="primary-btn">
+                Ulangi Kuis 🔄
+            </button>
+        </section>
+
+        <section id="reviewScreen" class="panel hidden">
+            <h2>📖 Pembahasan Jawaban</h2>
+            <p class="review-subtitle">
+                Yuk pelajari jawaban dari setiap soal!
+            </p>
+
+            <div id="reviewContainer"></div>
+
+            <button id="backResultBtn" class="primary-btn">
+                Kembali ke Hasil
+            </button>
+        </section>
+
+        <footer>
+            <p>💙 Belajar, Berlatih, dan Menjadi Lebih Pintar!</p>
+            <small>Matematika Kelas 3 SD</small>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
